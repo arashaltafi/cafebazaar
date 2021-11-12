@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/coordinator_comment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".comment.Comment_Activity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:background="@color/purple_500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@+id/img_back"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray200"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نظرات کاربران"/>
+                <ImageView
+                    app:srcCompat="@drawable/icon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"/>
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_back"
+                    app:srcCompat="@drawable/ic_baseline_arrow_forward_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/img_send_comment"
+                android:layoutDirection="ltr"
+                app:srcCompat="@drawable/ic_baseline_send_24"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+
+            <EditText
+                android:inputType="text"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:maxLength="50"
+                android:scrollbars="horizontal"
+                android:textColorHint="@color/gray500"
+                android:id="@+id/edt_comment"
+                android:textColor="@color/gray100"
+                android:hint="دیدگاه خود را ثبت کنید"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/img_send_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rc_comment"/>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:id="@+id/rltv_lottie_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.airbnb.lottie.LottieAnimationView
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/emptybox"
+                    android:id="@+id/lottie_empty_comment"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:textColor="@color/gray300"
+                    android:layout_marginTop="8dp"
+                    android:text="اولین نفر نظر خود را ثبت کنید"
+                    android:layout_above="@+id/lottie_empty_comment"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/pr_loading_comment"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

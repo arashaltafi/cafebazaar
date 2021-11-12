@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arash.altafi.caffebazar">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:name=".utility.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/lightbulb"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/lightbulb"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppTheme">
+        <activity
+            android:name=".about.About_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".favourite.Favourite_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".link.Link_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".transaction.Transaction_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".subcribe.SubScribe_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".profile.EditProfile_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".profile.Profile_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".morePodcast.More_Podcast_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".detailsPodcast.Podcast_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".moreNews.More_News_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".comment.Comment_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".detailsNews.DetailsNews_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".moreVideo.All_Video_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".playVideo.Play_Video_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name=".detailsProduct.DetailsProduct_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".category.Category_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.Home_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splash.Splash_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".auth.Verify_Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".auth.Login_Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".intro.Intro_Activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="pushe_token"
+            android:value="bGQ4M21tcnI2MDZ6M3lxZUBpeHFAODkwNjY4NDg2MDY=" />
+    </application>
+
+</manifest>

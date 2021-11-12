@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layoutDirection="rtl"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".auth.Login_Activity">
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="350dp"-->
+<!--        app:srcCompat="@drawable/ic_mobile_apps_bro" />-->
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/ic_mobile_apps_bro" />
+
+    <EditText
+        android:ellipsize="end"
+        android:lines="1"
+        android:imeOptions="actionSend"
+        android:maxLength="11"
+        android:id="@+id/edt_login"
+        android:gravity="right"
+        android:inputType="phone"
+        android:textColor="@color/gray900"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/ic_baseline_phone_android_24"
+        android:drawableTint="@color/gray500"
+        android:padding="8dp"
+        android:background="@drawable/shape_edittext_auth"
+        android:hint="موبایل : 09123456789"
+        android:textColorHint="@color/gray500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/gray200"
+        android:layout_gravity="right"
+        android:text="جهت ورود به اپلیکیشن شماره خود را وارد کنید"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/pr_loading"
+            android:layout_centerInParent="true"
+            android:layout_width="42dp"
+            android:layout_height="42dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_centerInParent="true"
+            android:id="@+id/btn_login"
+            android:text="ورود"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

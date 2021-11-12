@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".detailsProduct.DetailsProduct_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:paddingBottom="8dp"
+            android:layout_above="@+id/rltv_buy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_details_product"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"/>
+
+                    <ImageView
+                        android:id="@+id/img_back"
+                        android:padding="16dp"
+                        app:srcCompat="@drawable/ic_baseline_arrow_forward_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="16dp"
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/img_author_details_product"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        app:civ_border_color="@color/purple_500"
+                        app:civ_border_width="1dp"
+                        android:layout_alignParentRight="true"/>
+
+                    <TextView
+                        android:layout_marginRight="8dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/img_author_details_product"
+                        android:id="@+id/txt_author_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="مدرس دوره :"
+                        android:textColor="@color/gray500"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_marginRight="8dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/txt_author_a"
+                        android:id="@+id/txt_author_details_product"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray100"
+                        android:textSize="16sp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/txt_title_details_product"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <include layout="@layout/layout_cource" />
+
+                <TextView
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/gray500"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="توضیحات دوره :"/>
+
+                <TextView
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/txt_content_details_product"
+                    android:textColor="@color/gray100"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <include layout="@layout/layout_buy_product"
+            android:id="@+id/rltv_buy"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/rltv_loading_data"
+            android:background="@color/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

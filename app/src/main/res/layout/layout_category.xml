@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginTop="16dp"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:background="@color/background_secondray"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rltv_1"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/img_1"
+                app:srcCompat="@drawable/icon"
+                android:layout_alignParentRight="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:id="@+id/txt_category_1"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeMaxTextSize="18sp"
+                app:autoSizeStepGranularity="2sp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="مقدماتی آندروید"
+                android:textColor="@color/gray200"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/img_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <View
+            android:background="@color/gray300"
+            android:layout_gravity="center"
+            android:layout_width="1dp"
+            android:layout_height="40dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rltv_2"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/img_2"
+                app:srcCompat="@drawable/icon"
+                android:layout_alignParentRight="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:id="@+id/txt_category_2"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeMaxTextSize="18sp"
+                app:autoSizeStepGranularity="2sp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="تکمیلی آندروید"
+                android:textColor="@color/gray200"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/img_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:background="@color/background_secondray"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rltv_3"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/img_3"
+                app:srcCompat="@drawable/icon"
+                android:layout_alignParentRight="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:id="@+id/txt_category_3"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeMaxTextSize="18sp"
+                app:autoSizeStepGranularity="2sp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="پیشرفته آندروید"
+                android:textColor="@color/gray200"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/img_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <View
+            android:background="@color/gray300"
+            android:layout_gravity="center"
+            android:layout_width="1dp"
+            android:layout_height="40dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rltv_4"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/img_4"
+                app:srcCompat="@drawable/icon"
+                android:layout_alignParentRight="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:id="@+id/txt_category_4"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeMaxTextSize="18sp"
+                app:autoSizeStepGranularity="2sp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="پروژه محور آندروید"
+                android:textColor="@color/gray200"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/img_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

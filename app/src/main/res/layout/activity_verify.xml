@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layoutDirection="rtl"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".auth.Verify_Activity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/ic_mobile_bro" />
+
+    <com.mukesh.OtpView
+        android:imeOptions="actionSend"
+        android:id="@+id/edt_verify"
+        android:inputType="number"
+        android:textColor="@color/gray900"
+        app:OtpItemSpacing="8dp"
+        android:itemBackground="@color/gray200"
+        app:OtpItemRadius="8dp"
+        app:OtpViewType="rectangle"
+        app:OtpLineColor="@color/purple_500"
+        app:OtpItemHeight="54dp"
+        app:OtpItemWidth="54dp"
+        app:OtpItemCount="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/gray200"
+        android:layout_gravity="center"
+        android:text="کد ارسال شده را تایید کنید"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/pr_verify"
+        android:layout_centerInParent="true"
+        android:layout_width="42dp"
+        android:layout_height="42dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_verify"
+        android:text="تایید کد"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

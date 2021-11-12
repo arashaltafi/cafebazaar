@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:layout_margin="4dp"
+    android:id="@+id/card_category"
+    app:cardBackgroundColor="@color/background_primiray"
+    app:cardCornerRadius="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/img_product"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:id="@+id/txt_title_product"
+            android:padding="8dp"
+            android:textColor="@color/gray100"
+            android:textSize="14sp"
+            android:layout_gravity="right"
+            android:ellipsize="end"
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray500"
+                android:textSize="12sp"
+                android:layout_alignParentRight="true"
+                android:text="قیمت :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:id="@+id/txt_price_product"
+                android:textColor="@color/teal_200"
+                android:textSize="14sp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/navcast"
+    tools:context=".subcribe.SubScribe_Activity">
+
+    <LinearLayout
+        android:id="@+id/lnr_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn"
+            android:layout_centerHorizontal="true"
+            android:text="جهت استفاده از سرویس ناوکست باید اشتراک تهیه نمایید"
+            android:textColor="@color/gray900"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:text="اشتراک" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnr_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn"
+            android:layout_centerHorizontal="true"
+            android:text="بررسی وضعیت اشتراک"
+            android:textColor="@color/gray900"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/pr_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:text="اشتراک" />
+    </LinearLayout>
+</RelativeLayout>
