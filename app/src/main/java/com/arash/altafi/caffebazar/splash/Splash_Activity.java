@@ -1,7 +1,7 @@
 package com.arash.altafi.caffebazar.splash;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import androidx.multidex.BuildConfig;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -9,11 +9,14 @@ import android.os.Handler;
 import android.os.Looper;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.airbnb.lottie.LottieAnimationView;
-import com.arash.altafi.caffebazar.BuildConfig;
 import com.arash.altafi.caffebazar.R;
 import com.arash.altafi.caffebazar.home.Home_Activity;
+
+/**
+* Programming by arash altafi
+* github : arashaltafi
+*/
 
 public class Splash_Activity extends AppCompatActivity {
 
