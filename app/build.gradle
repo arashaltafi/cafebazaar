@@ -8,8 +8,8 @@ android {
         applicationId "com.arash.altafi.caffebazar"
         minSdkVersion 17
         targetSdkVersion 30
-        versionCode 6
-        versionName "1.5"
+        versionCode 7
+        versionName "1.6"
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
