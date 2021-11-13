@@ -17,6 +17,7 @@ import com.arash.altafi.caffebazar.home.Home_Activity;
  * Programming by arash altafi
  * Github : arashaltafi
  * test
+ * test 2
 */
 
 public class Splash_Activity extends AppCompatActivity {
